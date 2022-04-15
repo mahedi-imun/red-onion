@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+    .details-info{
+        width: 100% !important;
+        
+    }
+    .details-img{
+        width: 100% !important;
+    }
+   
+  }

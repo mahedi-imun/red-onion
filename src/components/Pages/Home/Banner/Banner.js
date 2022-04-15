@@ -4,7 +4,7 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div className='banner-container '>
-            <div className='d-md-flex flex-column justify-content-center align-items-center h-75 w-50 mx-auto '>
+            <div className='d-md-flex flex-column justify-content-center align-items-center w-50 mx-auto '>
                 <h2 className=' header-title mb-md-5   '> Best food waiting for Your belly</h2>
                 <InputGroup className="   ">
                     <FormControl

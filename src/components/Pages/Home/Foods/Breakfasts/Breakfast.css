@@ -1,0 +1,5 @@
+.food-card:hover{
+    box-shadow: 1px 1px 10px 4px rgb(146, 139, 139);
+    border-radius: 10px;
+    cursor: pointer;
+}
