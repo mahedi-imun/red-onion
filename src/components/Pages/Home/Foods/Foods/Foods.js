@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Tab, Tabs } from 'react-bootstrap';
 import Breakfasts from '../Breakfasts/Breakfasts';
+import Lunches from '../Lunch/Lunches';
 const Foods = () => {
     const [key, setKey] = useState('breakfast');
 
@@ -20,7 +21,9 @@ const Foods = () => {
                     </div>
                     </Tab>
                     <Tab eventKey="lunch" title="Lunch">
-                        <p>sdfgh</p>
+                        <div>
+                            <Lunches></Lunches>
+                        </div>
                     </Tab>
                     <Tab eventKey="dinner" title="Dinner" >
                         <p>skgnfbskjgfbv</p>

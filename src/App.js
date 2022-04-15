@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import FoodDetails from './components/Pages/FoodDetails/FoodDetails';
+import BreakfastDetails from './components/Pages/FoodDetails/BreakfastDetails';
+import LunchDetails from './components/Pages/FoodDetails/LunchDetails';
 import Home from './components/Pages/Home/Home/Home';
 import Header from './components/Shared/Header/Header';
 
@@ -11,7 +12,8 @@ function App() {
       <Routes>
         <Route path='/'element={<Home/>}></Route>
         <Route path='/home'element={<Home/>}></Route>
-        <Route path='/details/:id' element={<FoodDetails/>}></Route>
+        <Route path='/breakfast-details/:id' element={<BreakfastDetails/>}></Route>
+        <Route path='/lunch-details/:id' element={<LunchDetails/>}></Route>
       </Routes>
       
     </div>

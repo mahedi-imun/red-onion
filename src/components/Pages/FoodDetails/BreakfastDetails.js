@@ -59,7 +59,7 @@ const breakfasts = [
         quantity: 1
     }
 ];
-const FoodDetails = () => {
+const BreakfastDetails = () => {
     const id = useParams()
     
     const breakfast = breakfasts.map(breakfast => breakfast);
@@ -90,4 +90,4 @@ const FoodDetails = () => {
     );
 };
 
-export default FoodDetails;
+export default BreakfastDetails;

@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Breakfast.css'
-const Breakfast = ({ breakfast }) => {
-    const { img, name, description, price ,id} = breakfast
+
+const Lunch = ({lunch}) => {
+    console.log(lunch);
+    const { img, name, description, price ,id} = lunch
     const navigate = useNavigate()
-   
     return (
-        <div onClick={()=>navigate(`/breakfast-details/${id}`)} 
+        <div onClick={()=>navigate(`/lunch-details/${id}`)} 
         className=' food-card col-12' 
         style={{ width: "300px ", height: "350px" }}>
             <div className='d-flex flex-column align-items-center justify-content-center p-2'>
@@ -19,4 +19,4 @@ const Breakfast = ({ breakfast }) => {
     );
 };
 
-export default Breakfast;
+export default Lunch;
