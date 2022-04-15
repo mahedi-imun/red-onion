@@ -8,7 +8,7 @@
 .pointer{
     cursor: pointer;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .header-title{
         font-size: 20px;
     }
