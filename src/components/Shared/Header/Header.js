@@ -5,9 +5,9 @@ import logo from '../../../images/logo2.png'
 import { FaCartPlus } from 'react-icons/fa';
 const Header = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar sticky="top" collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
-                <Navbar.Brand href="/home">
+                <Navbar.Brand href="/">
                     <img style={{ width: "150px" }} src={logo} alt="red-onion" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

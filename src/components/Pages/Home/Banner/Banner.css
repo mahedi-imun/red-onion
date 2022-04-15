@@ -1,0 +1,16 @@
+.banner-container {
+  height: 90vh;
+  background-image: url(../../../../images/bannerbackground.png);
+  background-size:111%;
+  background-repeat: no-repeat;
+  background-position:top;
+}
+.pointer{
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .header-title{
+        font-size: 20px;
+    }
+    
+  }
