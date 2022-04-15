@@ -9,9 +9,9 @@ project live link [red onion](https://github.com/facebook/create-react-app).
     * React firebase hooks
     * Bootstrap
     * Sweet alert-2
-    * 
+    * react icons
 
-## fetchers :
+## features :
     *
     *
     *
