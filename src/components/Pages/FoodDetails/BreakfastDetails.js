@@ -59,7 +59,7 @@ const breakfasts = [
         quantity: 1
     }
 ];
-const BreakfastDetails = () => {
+const BreakfastDetails = ({cartHandler}) => {
     const id = useParams()
     
     const breakfast = breakfasts.map(breakfast => breakfast);
@@ -73,13 +73,13 @@ const BreakfastDetails = () => {
                 <div className='mb-4 '>
                     <h4 className='d-inline me-3'>price: ${price}</h4>
                     <div className=' d-inline border py-2  px-3 rounded-pill '>
-                        <button className='border-0 px-3 btn fs-6'><span><FaPlus /></span></button>
+                        <button  className='border-0 px-3 btn fs-6'><span><FaPlus /></span></button>
                         <span>1</span>
                         <button className='border-0 px-3 btn  fs-6'><span ><FaMinus /></span></button>
                     </div>
                 </div>
                 <div className=''>
-                    <button style={{ backgroundColor: "#F92C54" }} className='border-0 rounded-pill py-2 px-3 text-white '><span className='mx-1'><FaCartArrowDown /></span> Add</button>
+                    <button onClick={()=>cartHandler(breakfastDetails[0])} style={{ backgroundColor: "#F92C54" }} className='border-0 rounded-pill py-2 px-3 text-white '><span className='mx-1'><FaCartArrowDown /></span> Add</button>
                 </div>
             </div>
             <div className='details-img w-50 d-flex justify-content-center align-items-center'>

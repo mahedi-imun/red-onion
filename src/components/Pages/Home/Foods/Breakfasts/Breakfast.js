@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Breakfast.css'
-const Breakfast = ({ breakfast }) => {
+const Breakfast = ({ breakfast}) => {
     const { img, name, description, price ,id} = breakfast
     const navigate = useNavigate()
    

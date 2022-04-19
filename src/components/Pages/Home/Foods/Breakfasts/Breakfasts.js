@@ -61,6 +61,7 @@ const Breakfasts = () => {
                         breakfasts.map(breakfast => <Breakfast
                             key={breakfast.id}
                             breakfast={breakfast}
+                          
                         ></Breakfast>)
                     }
 

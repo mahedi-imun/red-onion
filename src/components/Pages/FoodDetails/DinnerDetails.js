@@ -52,7 +52,7 @@ const dinners = [
         id: 12
     }
 ]
-const DinnerDetails = () => {
+const DinnerDetails = ({cartHandler}) => {
     const id = useParams()
     
     const dinner = dinners.map(dinner => dinner);
@@ -72,7 +72,7 @@ const DinnerDetails = () => {
                 </div>
             </div>
             <div className=''>
-                <button style={{ backgroundColor: "#F92C54" }} className='border-0 rounded-pill py-2 px-3 text-white '><span className='mx-1'><FaCartArrowDown /></span> Add</button>
+                <button onClick={()=>cartHandler(dinnerDetails[0])} style={{ backgroundColor: "#F92C54" }} className='border-0 rounded-pill py-2 px-3 text-white '><span className='mx-1'><FaCartArrowDown /></span> Add</button>
             </div>
         </div>
         <div className='details-img w-50 d-flex justify-content-center align-items-center'>
